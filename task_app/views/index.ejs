@@ -15,24 +15,23 @@
       <h2><%= locals.capacityMessage %></h2>
     </div>
 
-    <div>
-      <button type="button" id="loadBtn">タスク構成</button>
-    </div>
-
     <div class="task-list">
       <ol id="planList"></ol>
     </div>
 
 
-    <div>
-      <a href="/task">
-        <button type="button" class="btn btn-outline-success">タスク</button>
-      </a>
-      <a href="/capacity">
-        <button type="button" class="btn btn-outline-success">体調入力</button>
-      </a>
-    </div>
-
+    <div class="button-group container text-center">
+      <div class="row">
+        <a href="/task" class="col">
+          <button type="button" class="btn btn-outline-success">タスクを確認</button>
+        </a>
+        <a class="col">
+          <button type="button" id="loadBtn" class="btn btn-outline-success">タスク構成</button>
+        </a>
+        <a href="/capacity" class="col">
+          <button type="button" class="btn btn-outline-success">体調入力</button>
+        </a>
+      </div>
   </div>
 
   <script src="javascripts/main.js"></script>

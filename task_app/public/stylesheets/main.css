@@ -150,6 +150,14 @@ header #header {
 #index .task-list ol li:last-child {
   border-bottom: none;
 }
+#index .button-group {
+  margin-top: 50px;
+}
+#index .button-group button {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
 
 .tab-menu {
   display: flex;
