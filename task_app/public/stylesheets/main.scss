@@ -178,7 +178,7 @@ header {
     margin: 0 auto;
     padding: 10px 15px;
     border-radius: 8px;
-    background-color: $color4;
+    background-color: $color3;
     height: 300px; // ← 追加：高さを指定
     overflow-y: auto; // ← 追加：縦スクロールを有効化
     border: #1c1c1c 1px solid;
@@ -201,8 +201,8 @@ header {
     margin-top: 50px;
 
     button {
-      width: 130px;
-      height: 130px;
+      width: 8em;
+      height: 8em;
       border-radius: 100%;
     }
   }
