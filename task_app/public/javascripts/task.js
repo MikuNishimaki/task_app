@@ -3,16 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabButtons = document.querySelectorAll('.tab-button');
   const tabContents = document.querySelectorAll('.tab-content');
 
-  tabButtons.forEach((btn, idx) => {
-    btn.addEventListener('click', () => {
-      // ボタンのactive切り替え
-      tabButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      // コンテンツの表示切り替え
-      tabContents.forEach((tab, i) => {
-        tab.style.display = (i === idx) ? 'block' : 'none';
-      });
-    });
+  tabButtons[0].addEventListener('click', () => {
+    tabContents[0].style.display = 'block';
+    tabButtons[0].classList.add('active');
+    tabContents[1].style.display = 'none';
+    tabButtons[1].classList.remove('active');
+  });
+  tabButtons[1].addEventListener('click', () => {
+    tabContents[1].style.display = 'block';
+    tabButtons[1].classList.add('active');
+    tabContents[0].style.display = 'none';
+    tabButtons[0].classList.remove('active');
   });
 
   // 通常タスク追加ボタン
