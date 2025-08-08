@@ -6,17 +6,30 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body>
 
   <div class="float-up" id="task">
+
+    <div>
+      <a href="/">
+        <button type="button" class="btn btn-outline-success">
+          ホーム画面
+        </button>
+      </a>
+    </div>
     
     <div id="task-all">
       <!-- タブメニュー -->
       <div class="tab-menu">
-        <button class="tab-button active">タスク</button>
-        <button class="tab-button">固定タスク</button>
+        <button type="button" class="tab-button active btn btn-outline-success">
+          タスク
+        </button>
+        <button type="button" class="tab-button btn btn-outline-success">
+          固定タスク
+        </button>
       </div>
   
       <!-- タブ1: タスク -->
@@ -29,10 +42,10 @@
   
               <div class="task">
                 <div>
-                  <%= task[i].name %>|
-                  <%= task[i].category %>|
-                  優先度：<%= task[i].priority %>|
-                  疲労度：<%= task[i].fatigue %>
+                  <p><%= task[i].name %></p>
+                  <p><%= task[i].category %></p>
+                  <p>優先度：<%= task[i].priority %></p>
+                  <p>疲労度：<%= task[i].fatigue %></p>
                 </div>
               </div>
   
@@ -51,10 +64,10 @@
   
               <div class="task">
                 <div>
-                  <%= fixedTask[i].name %>|
-                  <%= fixedTask[i].category %>|
-                  優先度：<%= fixedTask[i].priority %>|
-                  疲労度：<%= fixedTask[i].fatigue %>
+                  <p><%= fixedTask[i].name %></p>
+                  <p><%= fixedTask[i].category %></p>
+                  <p>優先度：<%= fixedTask[i].priority %></p>
+                  <p>疲労度：<%= fixedTask[i].fatigue %></p>
                 </div>
               </div>
   
